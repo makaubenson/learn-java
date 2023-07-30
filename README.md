@@ -525,3 +525,101 @@ public class Main {
 }
 // Old enough to vote!
 ```
+
+## Java If ... Else
+### Java Conditions and If Statements
+- You already know that Java supports the usual logical conditions from mathematics:
+```agsl
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+Equal to a == b
+Not Equal to: a != b
+```
+- Java has the following conditional statements:
+  - Use `if` to specify a block of code to be executed, if a specified condition is true
+  - Use `else` to specify a block of code to be executed, if the same condition is false
+  - Use `else if` to specify a new condition to test, if the first condition is false
+  - Use `switch` to specify many alternative blocks of code to be executed
+ 
+## The if Statement
+- Use the if statement to specify a block of Java code to be executed if a condition is true.
+```agsl
+if (condition) {
+  // block of code to be executed if the condition is true
+}
+```
+```agsl
+public class Main {
+  public static void main(String[] args) {
+    if (20 > 18) {
+      System.out.println("20 is greater than 18"); // obviously
+    }  
+  }
+}
+// 20 is greater than 18
+```
+- We can also test variables:
+```agsl
+public class Main {
+  public static void main(String[] args) {
+    int x = 20;
+    int y = 18;
+    if (x > y) {
+      System.out.println("x is greater than y");
+    }  
+  }
+}
+//x is greater than y
+```
+
+## The else Statement
+- Use the else statement to specify a block of code to be executed if the condition is false.
+```agsl
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+```
+```agsl
+public class Main {
+  public static void main(String[] args) {
+    int time = 20;
+    if (time < 18) {
+      System.out.println("Good day.");
+    } else {
+      System.out.println("Good evening.");
+    }  
+  }
+}
+//Good evening.
+```
+## The else if Statement
+- Use the `else if` statement to specify a new condition if the first condition is false.
+```agsl
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+```
+
+```agsl
+public class Main {
+  public static void main(String[] args) {
+    int time = 22;
+    if (time < 10) {
+      System.out.println("Good morning.");
+    } else if (time < 18) {
+      System.out.println("Good day.");
+    }  else {
+      System.out.println("Good evening.");
+    }
+  }
+}
+//Good evening.
+```
