@@ -291,3 +291,46 @@ public class Main {
   }
 }
 ```
+## Java Operators
+- Operators are used to perform operations on variables and values.
+- In the example below, we use the + operator to add together two values:
+`int x = 100 + 50;`
+
+```agsl
+int sum1 = 100 + 50;        // 150 (100 + 50)
+int sum2 = sum1 + 250;      // 400 (150 + 250)
+int sum3 = sum2 + sum2;     // 800 (400 + 400)
+```
+
+- Java divides the operators into the following groups:
+  - Arithmetic operators
+  - Assignment operators
+  - Comparison operators
+  - Logical operators
+  - Bitwise operators
+```agsl
++	Addition	Adds together two values	x + y
+```
+```agsl
+-	Subtraction	Subtracts one value from another	x - y
+```
+
+```agsl
+*	Multiplication	Multiplies two values	x * y
+```
+
+```agsl
+/	Division	Divides one value by another	x / y
+```
+
+```agsl
+%	Modulus	Returns the division remainder	x % y
+```
+
+```agsl
+++	Increment	Increases the value of a variable by 1	++x
+```
+
+```agsl
+--	Decrement	Decreases the value of a variable by 1	--x
+```
