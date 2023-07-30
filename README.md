@@ -356,3 +356,17 @@ System.out.println(txt.toLowerCase());   // Outputs "hello world"
 String txt = "Please locate where 'locate' occurs!";
 System.out.println(txt.indexOf("locate")); // Outputs 7
 ```
+
+## Java String Concatenation
+- The + operator can be used between strings to combine them. This is called concatenation:
+```agsl
+String firstName = "John";
+String lastName = "Doe";
+System.out.println(firstName + " " + lastName);
+```
+- You can also use the concat() method to concatenate two strings:
+```agsl
+String firstName = "John ";
+String lastName = "Doe";
+System.out.println(firstName.concat(lastName));
+```
