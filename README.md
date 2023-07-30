@@ -488,3 +488,40 @@ public class Main {
   }
 }
 ```
+
+## Java Booleans
+- A boolean type is declared with the boolean keyword and can only take the values true or false:
+```agsl
+boolean isJavaFun = true;
+boolean isFishTasty = false;
+System.out.println(isJavaFun);     // Outputs true
+System.out.println(isFishTasty);   // Outputs false
+```
+- Example 2
+```agsl
+int x = 10;
+int y = 9;
+System.out.println(x > y); // returns true, because 10 is higher than 9
+```
+
+- Example 3
+```agsl
+System.out.println(10 > 9); // returns true, because 10 is higher than 9
+```
+
+- Real Life Example
+```agsl
+public class Main {
+  public static void main(String[] args) {
+    int myAge = 25;
+    int votingAge = 18;
+    
+    if (myAge >= votingAge) {
+      System.out.println("Old enough to vote!");
+    } else {
+      System.out.println("Not old enough to vote.");
+    }  
+  }
+}
+// Old enough to vote!
+```
