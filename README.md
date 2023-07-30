@@ -370,3 +370,64 @@ String firstName = "John ";
 String lastName = "Doe";
 System.out.println(firstName.concat(lastName));
 ```
+
+## Java Numbers and Strings
+- Adding Numbers and Strings
+- Java uses the + operator for both addition and concatenation.
+- Numbers are added. Strings are concatenated.
+
+```agsl
+int x = 10;
+int y = 20;
+int z = x + y;  // z will be 30 (an integer/number)
+```
+- If you add two strings, the result will be a string concatenation:
+```agsl
+String x = "10";
+String y = "20";
+String z = x + y;  // z will be 1020 (a String)
+```
+- If you add a number and a string, the result will be a string concatenation:
+```agsl
+String x = "10";
+int y = 20;
+String z = x + y;  // z will be 1020 (a String)
+```
+
+## Java Special Characters
+### Strings - Special Characters
+- Because strings must be written within quotes, Java will misunderstand this string, and generate an error:
+`String txt = "We are the so-called "Vikings" from the north.";`
+- The solution to avoid this problem, is to use the backslash escape character.
+- The backslash (\\) escape character turns special characters into string characters:
+
+-  Single Quote
+```agsl
+\'	'	Single quote
+```
+- Double Quote
+```agsl
+\"	"	Double quote
+```
+- Backslash
+```agsl
+\\	\	Backslash
+```
+- Double Quote
+
+```agsl
+String txt = "We are the so-called \"Vikings\" from the north.";
+```
+-  Single quote
+```agsl
+String txt = 'It\'s alright.';
+```
+- Backslash
+- `String txt = "The character \\ is called backslash.";`
+
+```agsl
+\n	New Line
+\r	Carriage Return
+\b	Backspace
+\f	Form Feed
+```
